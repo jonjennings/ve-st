@@ -30,8 +30,15 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation col-9" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 've-starter-theme' ); ?></button>
+				<a href="#" class="burger-trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav><!-- #site-navigation -->
+			<nav id="mobile-navigation" class="mobile-main-navigation col" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'moible-primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
