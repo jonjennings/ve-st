@@ -5,6 +5,10 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package VE_Starter_Theme
+ *
+ * This is a version of _underscores taken at this commit: https://github.com/Automattic/_s/commit/b330bbaba7fc62c089cdf94e52595941493882db
+ * on June 5th, 2017.
+ *
  */
 
 if ( ! function_exists( 've_starter_theme_setup' ) ) :
@@ -107,9 +111,11 @@ add_action( 'widgets_init', 've_starter_theme_widgets_init' );
 function ve_starter_theme_scripts() {
 	wp_enqueue_style( 've-starter-theme-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 've-starter-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 've-starter-theme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20170602', true );
 
-	wp_enqueue_script( 've-starter-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 've-starter-theme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20170602', true );
+
+	wp_enqueue_script( 've-starter-site-js', get_template_directory_uri() . '/assets/js/site.js', array(), '20170602', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
