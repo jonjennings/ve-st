@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/site.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "sass/style.scss"
+      ],
+      "main": true
+    }
+  }
+}
