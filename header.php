@@ -38,7 +38,7 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 			<nav id="mobile-navigation" class="mobile-main-navigation col" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'moible-primary-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'mobile-primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
